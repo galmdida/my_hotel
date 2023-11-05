@@ -1,0 +1,57 @@
+body{
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+}
+
+/* My logo is close to page margins, top and left, therefore add padding */
+/* Beautify by color, go to google color picker and get orange */
+/* Increase the font size to 50px */
+/* Remove text underline */
+/* Capitalize texts */
+/* Add text shadow just like with the box model - do not put commas */
+#page-Logo a{
+    padding: 10px;
+    font-family: "Oleo Script", sans-serif;
+    color: #ffc100;
+    font-size: 35px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgb(0,0,0);
+}
+
+/* Remove bullets from list items */
+/* Remove margin and padding to have control */
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Creating NAV using flex */
+/* Then use justify content to drag the ul to the right */
+/* Align items to center */
+/* Create some padding to distance items from page edges */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Again we are going to make ul a flex display */
+/* To make sure that only this list is selected use header as parent */
+header ul{
+    display: flex;
+}
+
+/* Remove underline from achor tag in nav */
+nav a{
+    text-decoration: none;
+}
+
+/* The list items are touching each other, we can change this by left margin */
+/* Create some padding to distance items from page edges */
+header li{
+    margin-left: 5px;
+    padding: 20px;
+}
