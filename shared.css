@@ -69,3 +69,8 @@ header{
     width: 100%;
     box-sizing: border-box;
 }
+
+/* Adding hover effect to a */
+nav ul a:hover{
+    color: rgb(224, 206, 206);
+}
