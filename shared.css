@@ -45,8 +45,12 @@ header ul{
 }
 
 /* Remove underline from achor tag in nav */
-nav a{
+/* Make the color of the tabs green and size 25px make it bold*/
+nav ul a{
     text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 /* The list items are touching each other, we can change this by left margin */
@@ -54,4 +58,14 @@ nav a{
 header li{
     margin-left: 5px;
     padding: 20px;
+}
+
+/* Now, I want to bring the image just below the header */
+/* I first remove the header out of the document flow */
+/* But in the current position the size is shorten, lets take 100% of parent */
+/* Make box-sizing border box to avoid overflowing content */
+header{
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
 }
