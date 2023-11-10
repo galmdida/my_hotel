@@ -63,3 +63,90 @@
     background-color: #ff7400;
 }
 
+/* Working on highlight section */
+/* Resizing the image with fixed height */
+/* Add box shadow to images */
+/* Fitting the images without losing image ratio */
+
+.services img{
+    height: 200px;
+    width: 100%;
+    box-shadow: 2px 2px 2px rgb(0, 34, 56);
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+
+/* I wanna make these servecices to be on the same line */
+/* Create with of the container */
+/* Centering the block element */
+/* Create some space below */
+/* Justify content center */
+#services{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+
+/* Creating margins around the image */
+.services{
+    margin: 0 15px;
+}
+
+/* Aligning text to the centre */
+/* Change text color to gray */
+/* Increase font size */
+/* Reduce top margin */
+.services p{
+    text-align: center;
+    color: #37363b;
+    font-size: 22px;
+    margin-top: 2px;
+}
+
+/* Styling h2 */
+/* Increase font size */
+/* Reduce margin */
+#highlight h2{
+    text-align: center;
+    font-size: 27px;
+    text-transform: uppercase;
+    margin: 15px;
+}
+
+/* Adding background color to the section */
+#highlight{
+    background: linear-gradient(0deg, rgb(10,136,200), rgb(10,100,100));
+}
+
+/* You can see margin collapsing effect bringing an issue */
+#highlight{
+    padding: 12px;
+}
+
+/* Creating footer */
+footer ul{
+    background-color: black;
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+}
+
+/* Change icon sizes */
+footer ul img{
+    width: 40px;
+    height: 40px;
+}
+
+/* Space between the images */
+footer li{
+    margin-left: 17px;
+}
+
+/* Add hover effects to the links */
+footer a:hover{
+    
+}
