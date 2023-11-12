@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(170, 135, 135);
+}
+
+/* Make the postion of the header static to avoid to have image as background */
+header {
+    position: static;
+    background-color: black;
+}
+
+/* Creating card */
+main ul{
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* Bring the description and action on the right of the image */
+/* Change background color of list item as white */
+/* Add box shadow and border radius */
+/* You can see that border radius is not effective on the side of image */
+/* This is because of overflow*/
+
+main li{
+    display: flex;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(0,0,0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Create padding around service desc */
+.service-desc{
+    padding: 15px;
+}
+
+/* Image doesn't look good because it is quashed in the container, so, */
+main li img{
+    object-fit: cover;
+}
+
+/* Modify the description */
+.service-desc p{
+    color: gray;
+}
+
+/* I want the to be on the right side towards the end */
+/* We can do this using flex */
+/* Default flex direction is row, change it to column */
+/* Then apply justify content to create space */
+/* What you need to do now is to put h2 and p in one non-semantic, div */
+
+.service-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-desc a{
+    text-decoration: none;
+    color: rgb(28, 119, 119);
+}
+
+/* Give hover effect to the action list */
+.service-desc a:hover{
+    background-color: rgb(66, 202, 202);
+    box-shadow: 2px 2px 2px black;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+/* Bring the content to right */
+.action{
+    text-align: right;
+}
