@@ -10,7 +10,7 @@ header {
 
 /* Creating card */
 main ul{
-    width: 800px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -19,7 +19,7 @@ main ul{
 /* Add box shadow and border radius */
 /* You can see that border radius is not effective on the side of image */
 /* This is because of overflow*/
-
+/* Make the with of lists 500px */
 main li{
     display: flex;
     background-color: white;
@@ -30,12 +30,15 @@ main li{
 
 /* Create padding around service desc */
 .service-desc{
-    padding: 15px;
+    padding: 0px;
 }
 
 /* Image doesn't look good because it is quashed in the container, so, */
+/* I have decided to reduce image sizes */
 main li img{
     object-fit: cover;
+    width: 300px;
+    height: 300px;
 }
 
 /* Modify the description */
@@ -53,6 +56,7 @@ main li img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 5px;
 }
 
 .service-desc a{
@@ -71,4 +75,33 @@ main li img{
 /* Bring the content to right */
 .action{
     text-align: right;
+}
+
+/* Creating layout */
+/* Making two columns of equal pixel */
+/* Add gap between the lists */
+main ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 10px;
+}
+
+/* Make the third one to occupy the entire space */
+main li:nth-of-type(3){
+    grid-column: 1/3;
+}
+
+/* Lets add a bottom margin to ul */
+main ul{
+    margin: 0 auto 75px auto;
+}
+
+/* Increase the font size of the pragraph */
+main p{
+    font-size: 20px;
+}
+
+/* Change the font color of the h2 */
+main h2{
+    color: rgb(182, 51, 11);
 }

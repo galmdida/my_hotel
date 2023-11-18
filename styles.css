@@ -126,3 +126,13 @@
 #highlight{
     padding: 12px;
 }
+
+/* From the services a remove text decoration */
+#services a{
+    text-decoration: none;
+}
+
+/* Add hover effect to it */
+#services a:hover p{
+    color: #e97528;
+}
